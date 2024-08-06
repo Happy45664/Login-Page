@@ -1,0 +1,31 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Login Page</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+
+<body>
+    <div class="container">
+        <center><h1>Student Login Page</h1></center>
+        <form action="/myaction.php" name="myForm" onsubmit="return validateForm()" method="post">
+            <div id="errorContainer" style="color: red;"></div>
+            <label>User Name: </label>
+            <input type="text" placeholder="Enter UserName" name="username" required>
+            <label>Email ID: </label>
+            <input type="email" id="email" name="Email" required>
+            <label>Password: </label>
+            <input type="password" placeholder="Enter the Password" name="Password" required>
+            <button type="submit">Login</button>
+            <input type="checkbox" checked="checked"> Remember me
+            <div></div>
+            Forgot <a href="#">Password?</a>
+        </form>
+    </div>
+    <script src="script.js"></script>
+</body>
+
+</html>
